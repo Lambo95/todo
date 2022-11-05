@@ -1,0 +1,25 @@
+div {
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: space-around;
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input {
+    width: 18rem;
+    border: 1px solid;
+    margin-right: 2rem;
+    height: 1.8rem;
+  }
+}
+.btn-style {
+  border: none;
+  background-color: white;
+  text-align: center;
+}
+button {
+  color: blue;
+}

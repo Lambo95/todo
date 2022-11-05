@@ -1,0 +1,23 @@
+div {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-style {
+  background: none;
+  border: none;
+}
+
+button {
+  color: green;
+}
