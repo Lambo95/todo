@@ -7,11 +7,11 @@ import { TodoClass } from './todo-class';
 })
 export class TodosService {
   todos: TodoClass[] = [
-    {
-      id: 1,
-      title: 'template',
-      completed: false,
-    },
+    // {
+    //   id: 1,
+    //   title: 'template',
+    //   completed: false,
+    // },
   ];
 
   todosChecked: TodoClass[] = [];

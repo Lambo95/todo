@@ -8,9 +8,8 @@ import { TodosService } from 'src/app/todos.service';
   styleUrls: ['./todo-list.component.scss'],
 })
 export class TodoListComponent implements OnInit {
-  todoItems = new TodoClass();
-
-  todosArray: any = [];
+  todoItem = new TodoClass();
+  todosArray: TodoClass[] = [];
 
   constructor(private tservice: TodosService) {}
 
@@ -19,9 +18,11 @@ export class TodoListComponent implements OnInit {
   }
 
   checkTodo(i: number) {
-    this.todoItems = this.todosArray.splice(i, 1);
-    this.todoItems.completed = true;
-    this.tservice.checkTodo(this.todoItems);
-    this.todoItems = new TodoClass();
+    let todoItems = this.todosArray.splice(i, 1);
+    this.todoItem = todoItems[0];
+    console.log(this.todoItem);
+    this.todoItem.completed = true;
+    this.tservice.checkTodo(this.todoItem);
+    this.todoItem = new TodoClass();
   }
 }
